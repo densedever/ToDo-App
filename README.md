@@ -8,6 +8,7 @@ logic implemented in jQuery.
 
 Folder structure:
 
+```
 -+-index.html (main file)
  |
  +-style.css (style for main page)
@@ -17,10 +18,11 @@ Folder structure:
    +-jquery-3.2.1.min.js (production jQuery for small transfer size)
    |
    +-main.js (main logic code)
+```
 
 The site's container div contains two parts to it: 
-#submit-area, which contains the form for filling out the task and metadata.
-#saved-tasks, which contains the list of tasks.
+ * #submit-area, which contains the form for filling out the task and metadata.
+ * #saved-tasks, which contains the list of tasks.
 The form itself contains three submit fields and a button.
 
 The users posts a task by filling out the respective fields.
@@ -32,8 +34,8 @@ lot of details.
 When the forms are filled out and the "Post" button is submitted, the task's
 metadata will be posted in a div generated in #saved-tasks, along with two
 buttons:
-"Edit" - edits the task text, and 
-"Delete" - deletes the current task.
+ * "Edit" - edits the task text, and 
+ * "Delete" - deletes the current task.
 
 Note: input is sanitized to prevent XSS from the client side, but this MUST 
 be done on the server, as JavaScript could be disabled in the browser and 
