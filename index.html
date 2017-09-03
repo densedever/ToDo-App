@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <title>TODO App</title>
+        <link href='style.css' rel='stylesheet'/>
+    </head>
+    <body>
+        <div id='container'>
+            <div id='submit-area'>
+                Task: <input id='post-text' type='text'/><br>
+                Name: <input id='task-name' type='text'/><br>
+                Description: <input id='task-desc' type='text'/><br>
+                <button id='submit' type='button'>Post Task</button>
+                <div id='edit-area'>
+                    <textarea id='edit-field' cols="30" rows="10"></textarea>
+                    <button id='edit-submit' type='button'>Edit task</button>
+                </div>
+            </div>
+            <div id='saved-tasks'></div>
+        </div>
+        <script src='js/jquery-3.2.1.min.js'></script>
+        <script src='js/main.js'></script>
+    </body>
+</html>
