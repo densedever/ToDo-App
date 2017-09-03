@@ -65,5 +65,11 @@
                                       .text(new Date())
             })
         })
+        $('#saved-tasks').on('click', '.delete', (event) => {
+            $(event.currentTarget)
+                .parent()
+                .remove()
+        })
+
     })
 })();
